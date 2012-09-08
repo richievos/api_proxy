@@ -1,3 +1,10 @@
+Setup:
+  rvm use whatever_ruby_version_you_want # not required
+  source .rvmrc # if needed
+  bundle install
+  
+  npm install
+
 Boot with
   ./stop.sh # WARNING this uses killall and isn't super safe
   ./start.sh
