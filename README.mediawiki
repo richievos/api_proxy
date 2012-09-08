@@ -1,0 +1,10 @@
+Boot with
+  ./stop.sh # WARNING this uses killall and isn't super safe
+  ./start.sh
+
+Test with
+  curl -i --header "Host: ruby" localhost:9000/cache_headers
+  curl -i --header "Host: node" localhost:9000/cache_headers
+
+or
+  ./test.sh

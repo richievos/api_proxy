@@ -1,0 +1,3 @@
+# I don't care about the Gem versions at this point
+Gemfile.lock
+node_modules
