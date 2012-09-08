@@ -8,3 +8,18 @@ Test with
 
 or
   ./test.sh
+
+Functionality:
+  ************** Field stripping ********************
+  
+  Base data
+  curl --header Host: node localhost:9000/cache_headers
+  { "key1": "value1", "key2": "value2" }
+  
+  1 key
+  curl --header Host: node localhost:9000/cache_headers?fields=key1
+  {"key1":"value1"}
+  
+  Multiple keys
+  curl --header Host: node localhost:9000/cache_headers?fields=key1,key2
+  {"key1":"value1","key2":"value2"}
